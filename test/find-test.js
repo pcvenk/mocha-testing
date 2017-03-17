@@ -15,7 +15,7 @@ describe('Query the user from the DB', () => {
     it('Finds the user by the name of Joe', (done) => {
         User.findOne({name: 'Joe'})
             .then((user) => {
-                console.log(user.name);
+                assert(user._id.toString() === joe._id.toString());
                 done();
             });
     });
