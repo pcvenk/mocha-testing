@@ -6,9 +6,9 @@ mongoose.connection
     .once('open', () => console.log('Good to go'));
 
 
-// beforeEach((done) => {
-//    mongoose.connection.collections.users.drop(() =>{
-//        //Ready to run the next test!
-//        done();
-//    });
-// });
+beforeEach((done) => {
+   mongoose.connection.collections.users.drop(() =>{
+       //Ready to run the next test!
+       done();
+   });
+});
