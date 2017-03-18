@@ -41,7 +41,7 @@ describe('Deleting data from the DB', () => {
     });
 
     it('Remove method findByIdAndRemove', (done) => {
-        User.findByIdAndRemove({_id: joe._id})
+        User.findByIdAndRemove(joe._id)
             .then(() => User.findOne({_id: joe._id}))
             .then((user) => {
                 assert(user === null);
