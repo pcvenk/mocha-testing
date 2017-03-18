@@ -22,7 +22,7 @@ describe('Deleting data from the DB', () => {
             });
     });
 
-    it('Remove class models', (done) => {
+    it('Remove class method', (done) => {
         User.remove({name: 'Joe'})
             .then(() => User.findOne({name: 'Joe'}))
             .then((user) => {
@@ -30,4 +30,22 @@ describe('Deleting data from the DB', () => {
                 done();
             });
     });
+
+    it('Remove method finddOneAndRemove', (done) => {
+       User.findOneAndRemove({name: 'Joe'})
+           .then(() => User.findOne({_id: joe._id}))
+           .then((user) => {
+               assert(user === null);
+               done();
+           });
+    });
+
+    it('Remove method findByIdAndRemove', (done) => {
+        User.findByIdAndRemove({_id: joe._id})
+            .then(() => User.findOne({_id: joe._id}))
+            .then((user) => {
+                assert(user === null);
+                done();
+            });
+    })
 });
