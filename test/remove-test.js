@@ -21,4 +21,13 @@ describe('Deleting data from the DB', () => {
                 done();
             });
     });
+
+    it('Remove class models', (done) => {
+        User.remove({name: 'Joe'})
+            .then(() => User.findOne({name: 'Joe'}))
+            .then((user) => {
+                assert(user === null);
+                done();
+            });
+    });
 });
