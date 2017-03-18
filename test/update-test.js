@@ -10,14 +10,20 @@ describe('Updating records', () => {
             .then(() => done());
     });
 
-    it('Updating a model instance with set and save method', (done) => {
-        joe.set('name', 'Magnifico');
-        joe.save()
+    function assertName(operation, done) {
+        operation
             .then(() => User.find({}))
             .then((users) => {
                 assert(users.length === 1);
                 assert(users[0].name === 'Magnifico');
                 done();
             });
+    }
+
+    it('Updating a model instance with set and save method', (done) => {
+        joe.set('name', 'Magnifico');
+        assertName(joe.save(), done);
+
     });
+
 });
