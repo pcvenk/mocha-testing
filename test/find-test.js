@@ -12,11 +12,19 @@ describe('Query the user from the DB', () => {
             .then(() => done());
     });
 
-    it('Finds the user by the name of Joe', (done) => {
-        User.findOne({name: 'Joe'})
-            .then((user) => {
-                assert(user._id.toString() === joe._id.toString());
+    it('Find all the users by the name of Joe', (done) => {
+        User.find({name: 'Joe'})
+            .then((users) => {
+                assert(users[0]._id.toString() === joe._id.toString());
                 done();
             });
+    });
+
+    it('Finds all the users by the name of Joe', (done) => {
+       User.findOne({_id: joe._id})
+           .then((user) => {
+               assert(user.name === 'Joe');
+               done();
+           });
     });
 });
