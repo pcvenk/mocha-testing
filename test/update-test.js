@@ -29,4 +29,16 @@ describe('Updating records', () => {
     it('Updating a model instance with the update method', (done) => {
         assertName(joe.update({name: 'Magnifico'}), done);
     });
+
+    it('Updating model class (all instances matching the given criteria', (done) => {
+       assertName(User.update({name: 'Joe'}, {name: 'Magnifico'}), done);
+    });
+
+    it('Updating model class (findByIdAndUpdate)', (done) => {
+       assertName(User.findByIdAndUpdate(joe._id, {name: 'Magnifico'}), done);
+    });
+
+    it('Updating model class (findOneAndUpdate', (done) => {
+       assertName(User.findOneAndUpdate({name: 'Joe'}, {name: 'Magnifico'}), done);
+    });
 });
