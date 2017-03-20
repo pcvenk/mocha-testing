@@ -15,4 +15,25 @@ describe('Embedding subdocuments', () => {
                done();
            });
    });
+
+   it('Adding subdocuments to an existing record', (done) => {
+       let user = new User({
+           name: 'Joe',
+           posts: []
+       });
+
+       user.save()
+       //the user does not need to be returned, since the function implicitly returns it
+           .then(() => User.findOne({name: 'Joe'}))
+           .then((user) => {
+               user.posts.push({title: 'Second Post Title'});
+               //return the user to chain another promise to it
+               return user.save();
+           })
+           .then(() => User.findOne({name: 'Joe'}))
+           .then((user) => {
+               assert(user.posts[0].title = 'Second Post Title');
+               done();
+           });
+   });
 });
