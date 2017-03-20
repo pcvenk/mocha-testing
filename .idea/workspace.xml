@@ -109,8 +109,8 @@
       <file leaf-file-name="subdocument-test.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/subdocument-test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="421">
-              <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+            <state relative-caret-position="226">
+              <caret line="25" column="88" selection-start-line="25" selection-start-column="88" selection-end-line="25" selection-end-column="88" />
               <folding />
             </state>
           </provider>
@@ -330,12 +330,12 @@
       <workItem from="1489825369116" duration="140000" />
       <workItem from="1489849192087" duration="2514000" />
       <workItem from="1489994144019" duration="3996000" />
-      <workItem from="1490018945255" duration="2834000" />
+      <workItem from="1490018945255" duration="3014000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19285000" />
+    <option name="totallyTimeSpent" value="19465000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="517" y="23" width="919" height="873" extended-state="0" />
@@ -599,14 +599,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/remove-test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="60" selection-start-line="29" selection-start-column="60" selection-end-line="29" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/test-helper.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -639,6 +631,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test/remove-test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="60" selection-start-line="29" selection-start-column="60" selection-end-line="29" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/validate.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="331">
@@ -649,8 +649,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/subdocument-test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+        <state relative-caret-position="226">
+          <caret line="25" column="88" selection-start-line="25" selection-start-column="88" selection-end-line="25" selection-end-column="88" />
           <folding />
         </state>
       </provider>

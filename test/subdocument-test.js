@@ -36,4 +36,26 @@ describe('Embedding subdocuments', () => {
                done();
            });
    });
+
+   it('Removing subdocuments from an existing record', (done) => {
+       let user = new User({
+           name: 'Joe',
+           posts: [{
+               title: 'My Third Post Title'
+           }]
+       });
+
+       user.save()
+           .then(() => User.findOne({name: 'Joe'}))
+           .then((user) => {
+               //embedded documents are not saved automatically.
+               user.posts[0].remove();
+               return user.save();
+           })
+           .then(() => User.findOne({name: 'Joe'}))
+           .then((user) => {
+               assert(user.posts.length === 0);
+               done();
+           });
+   });
 });
