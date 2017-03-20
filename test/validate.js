@@ -26,6 +26,7 @@ describe('Recrods validation', () => {
             .then(() => console.log('User successfully saved!!!'))
             .catch((errMsg) => {
                 const {message} = errMsg.errors.name;
+                // console.log(errMsg);
 
                 assert(message === 'Name must be longer than 2 characters');
                 done();
