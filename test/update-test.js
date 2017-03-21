@@ -42,7 +42,7 @@ describe('Updating records', () => {
         assertName(User.findOneAndUpdate({name: 'Joe'}, {name: 'Magnifico'}), done);
     });
 
-    it('Updating a model class property with the update operator', (done) => {
+    xit('Updating a model class property with the update operator', (done) => {
         //use of inc update operator
         User.update({name: 'Joe'}, {$inc: {postCount: 1}})
             .then(() => User.findOne({name: 'Joe'}))

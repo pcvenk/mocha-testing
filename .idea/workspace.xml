@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="7b8c6f59-f2af-4c72-8460-14073ff34e06" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/user.js" afterPath="$PROJECT_DIR$/src/user.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/update-test.js" afterPath="$PROJECT_DIR$/test/update-test.js" />
     </list>
     <ignored path="mocha-testing.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -58,8 +60,8 @@
       <file leaf-file-name="update-test.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/update-test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="615">
-              <caret line="41" column="84" selection-start-line="41" selection-start-column="84" selection-end-line="41" selection-end-column="84" />
+            <state relative-caret-position="406">
+              <caret line="53" column="3" selection-start-line="53" selection-start-column="3" selection-end-line="53" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -75,21 +77,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="virtual-type-test.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="virtual-type-test.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/virtual-type-test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+            <state relative-caret-position="255">
+              <caret line="17" column="3" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="user.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/user.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+            <state relative-caret-position="255">
+              <caret line="17" column="3" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -146,12 +148,12 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/test/find-test.js" />
         <option value="$PROJECT_DIR$/test/remove-test.js" />
-        <option value="$PROJECT_DIR$/test/update-test.js" />
         <option value="$PROJECT_DIR$/src/postSchema.js" />
-        <option value="$PROJECT_DIR$/src/user.js" />
         <option value="$PROJECT_DIR$/test/validate.js" />
         <option value="$PROJECT_DIR$/test/subdocument-test.js" />
         <option value="$PROJECT_DIR$/test/virtual-type-test.js" />
+        <option value="$PROJECT_DIR$/test/update-test.js" />
+        <option value="$PROJECT_DIR$/src/user.js" />
       </list>
     </option>
   </component>
@@ -331,12 +333,12 @@
       <workItem from="1489849192087" duration="2514000" />
       <workItem from="1489994144019" duration="3996000" />
       <workItem from="1490018945255" duration="3766000" />
-      <workItem from="1490109763726" duration="325000" />
+      <workItem from="1490109763726" duration="760000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20542000" />
+    <option name="totallyTimeSpent" value="20977000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="517" y="23" width="919" height="873" extended-state="0" />
@@ -680,22 +682,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/update-test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="41" column="84" selection-start-line="41" selection-start-column="84" selection-end-line="41" selection-end-column="84" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/user.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/postSchema.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -736,10 +722,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test/update-test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="53" column="3" selection-start-line="53" selection-start-column="3" selection-end-line="53" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/virtual-type-test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+        <state relative-caret-position="255">
+          <caret line="17" column="3" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/user.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="3" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
           <folding />
         </state>
       </provider>

@@ -10,8 +10,13 @@ let userSchema = new mongoose.Schema({
         },
         required: [true, 'Name is required']
     },
-    postCount: Number,
     posts: [postSchema]
+});
+
+//keyword function is used instead of the fat arrow function because of the scope of 'this'
+userSchema.virtual('postCount').get(function() {
+    //this refers to the user
+    return this.posts.length
 });
 
 let User = mongoose.model('User', userSchema);
