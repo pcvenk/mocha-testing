@@ -10,7 +10,8 @@ let userSchema = new mongoose.Schema({
         },
         required: [true, 'Name is required']
     },
-    posts: [postSchema]
+    posts: [postSchema],
+    likes: Number
 });
 
 //keyword function is used instead of the fat arrow function because of the scope of 'this'
