@@ -11,7 +11,11 @@ let userSchema = new mongoose.Schema({
         required: [true, 'Name is required']
     },
     posts: [postSchema],
-    likes: Number
+    likes: Number,
+    blogPosts: [{
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'BlogPost'
+    }]
 });
 
 //keyword function is used instead of the fat arrow function because of the scope of 'this'
