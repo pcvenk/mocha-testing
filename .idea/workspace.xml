@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7b8c6f59-f2af-4c72-8460-14073ff34e06" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="7b8c6f59-f2af-4c72-8460-14073ff34e06" name="Default" comment="" />
     <ignored path="mocha-testing.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -25,16 +23,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="test-helper.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/test-helper.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="remove-test.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/remove-test.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -115,11 +103,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="blogPost.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="blogPost.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/blogPost.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="195">
               <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="comment.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/comment.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -332,12 +330,12 @@
       <workItem from="1489849192087" duration="2514000" />
       <workItem from="1489994144019" duration="3996000" />
       <workItem from="1490018945255" duration="3766000" />
-      <workItem from="1490109763726" duration="3542000" />
+      <workItem from="1490109763726" duration="3651000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23759000" />
+    <option name="totallyTimeSpent" value="23868000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="517" y="23" width="919" height="873" extended-state="0" />
@@ -749,6 +747,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/comment.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
