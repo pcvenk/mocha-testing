@@ -23,7 +23,7 @@ describe('Data associations', () => {
         User.findOne({name: 'Joe'})
             .populate('blogPosts')
             .then((user) => {
-                console.log(user);
+                assert(user.blogPosts[0].title === "Post Title");
                 done();
             })
     });
