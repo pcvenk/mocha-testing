@@ -21,6 +21,7 @@ describe('Data associations', () => {
 
     it.only('Saves a relation between a user and a post', (done) => {
         User.findOne({name: 'Joe'})
+            .populate('blogPosts')
             .then((user) => {
                 console.log(user);
                 done();
