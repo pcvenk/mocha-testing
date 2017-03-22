@@ -19,7 +19,7 @@ describe('Data associations', () => {
             .then(() => done());
     });
 
-    it.only('Saves a relation between a user and a post', (done) => {
+    it('Saves a relation between a user and a post', (done) => {
         User.findOne({name: 'Joe'})
             .populate('blogPosts')
             .then((user) => {
@@ -27,5 +27,59 @@ describe('Data associations', () => {
                 done();
             })
     });
+
+    it('Saves all data associations', (done) =>{
+       User.findOne({name: 'Joe'})
+       //queriying nested associated data. use the config object and state populate method
+       //several times including the model
+           .populate({
+               path: 'blogPosts',
+               populate: {
+                   path: 'comments',
+                   model: 'Comment',
+                   populate: {
+                       path: 'user',
+                       model: 'User'
+                   }
+               }
+           })
+           .then((user) => {
+               // console.log(user.blogPosts[0].comments[0].content);
+               assert(user.name === 'Joe');
+               assert(user.blogPosts[0].title === 'Post Title');
+               assert(user.blogPosts[0].content === 'This really is a nice post');
+               assert(user.blogPosts[0].comments[0].content === 'Tottaly agree!');
+               done();
+           });
+    });
+
+    it('Saves all data associations', (done) =>{
+       User.findOne({name: 'Joe'})
+           .populate({
+               path: 'blogPosts',
+               populate: {
+                   path: 'comments',
+                   model: 'Comment',
+                   populate: {
+                       path: 'user',
+                       model: 'User'
+                   }
+               }
+           })
+           .exec((err, user) => {
+              if(err){
+                  console.warn(err)
+              } else {
+                  console.log(user);
+                  assert(user.name === 'Joe');
+                  assert(user.blogPosts[0].title === 'Post Title');
+                  assert(user.blogPosts[0].content === 'This really is a nice post');
+                  assert(user.blogPosts[0].comments[0].content === 'Tottaly agree!');
+                  done();
+              }
+           });
+    });
+
+
 });
 
