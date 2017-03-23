@@ -75,6 +75,7 @@ describe('Data associations', () => {
                   assert(user.blogPosts[0].title === 'Post Title');
                   assert(user.blogPosts[0].content === 'This really is a nice post');
                   assert(user.blogPosts[0].comments[0].content === 'Tottaly agree!');
+                  assert(user.blogPosts[0].comments[0].user.name === 'Joe');
                   done();
               }
            });
