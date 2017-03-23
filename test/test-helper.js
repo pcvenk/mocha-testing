@@ -27,8 +27,8 @@ before((done) => {
 
 beforeEach((done) => {
    User.remove({}, () => {
-      BlogPost.remove({}, () =>{
-          Comment.remove({}, () =>{
+      BlogPost.remove({}, () => {
+          Comment.remove({}, () => {
               done();
           })
       })
